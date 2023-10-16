@@ -1,0 +1,8 @@
+#include<bits/stdc++.h>
+using namespace std;
+void main()
+{
+cout<<"hello how r u "<<end;
+cin>>m;
+return 0;
+}
