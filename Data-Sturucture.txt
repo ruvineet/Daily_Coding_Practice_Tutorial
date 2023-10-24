@@ -16,3 +16,4 @@ git log --pretty=full
 git commit --amend
 git log -p -1
 git checkout -f // remove the modified changes
+-------------------------------------------------------------
