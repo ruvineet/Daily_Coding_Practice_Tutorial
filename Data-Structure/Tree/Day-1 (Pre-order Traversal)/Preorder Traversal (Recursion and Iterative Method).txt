@@ -18,3 +18,22 @@ vector<int> preOrder(TreeNode<int> * root){
     return s1;
 }
 
+--------------------------------------------------Recursive Method---------------------------------------------------
+vector<int>v1;
+void Preorder(TreeNode<int> *root)
+{
+   if(!root)
+    {
+        return ;
+    }
+    else{
+        v1.push_back(root->data);
+        Preorder(root->left);
+        Preorder(root->right);
+    }
+}
+vector<int> preOrder(TreeNode<int> * root){
+    Preorder(root);
+    return v1;
+}
+
