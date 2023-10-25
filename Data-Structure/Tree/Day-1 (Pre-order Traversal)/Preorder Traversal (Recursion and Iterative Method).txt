@@ -1,0 +1,20 @@
+-----------------------------------------------------Iterative Method---------------------------------------------
+
+#include<stack>
+vector<int> preOrder(TreeNode<int> * root){
+    stack<TreeNode<int>*> st;
+    vector<int>s1;
+    st.push(root);
+    while(!st.empty())
+    {
+        TreeNode<int> *curr=st.top();
+        st.pop();
+        s1.push_back(curr->data);
+        if(curr->right!=NULL)
+           st.push(curr->right);
+        if(curr->left!=NULL)
+           st.push(curr->left);
+    }
+    return s1;
+}
+
