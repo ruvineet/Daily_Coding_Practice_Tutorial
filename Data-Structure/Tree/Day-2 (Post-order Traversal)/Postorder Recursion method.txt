@@ -1,0 +1,20 @@
+--------------------------------------------------------------------Recursion Method----------------------------------------------------------
+
+#include<bits/stdc++.h>
+vector<int>v1;
+void Postorder(TreeNode *root)
+{
+    if(!root)
+       return ;
+    Postorder(root->left);
+    Postorder(root->right);
+    v1.push_back(root->data);
+}
+vector<int> postorderTraversal(TreeNode *root)
+{
+   Postorder(root);
+   return v1;
+}
+
+
+
