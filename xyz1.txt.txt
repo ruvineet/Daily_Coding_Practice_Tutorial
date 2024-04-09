@@ -1,1 +1,8 @@
-xyz
+#include<iostream>
+using namspace std;
+int main()
+{
+cout<<" hello good morning , kahna kha ka jana"<<endl;
+}
+
+
