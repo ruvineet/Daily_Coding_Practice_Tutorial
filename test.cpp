@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-	int p = sum(2,3);
+	int p1 = sum1(2,3);
 	cout << p << endl;
 	cout << " hello world " << endl;
 	return 0;
